@@ -20,6 +20,9 @@ steps:
     - "-c"
     - |
         echo "enter 1 bash command per line"
+        echo _FUNCTIONS_BUCKET
         ls -la
         gcloud version
+substitutions:
+  _FUNCTIONS_BUCKET:
 # [END cloudbuild_quickstart_build]

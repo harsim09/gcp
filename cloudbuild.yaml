@@ -18,13 +18,12 @@ steps:
   args: [ 'build', '-t', 'asia.gcr.io/$PROJECT_ID/app-engine-tmp/quickstart-image:tag1', '.' ]
 images:
 - 'asia.gcr.io/firsttestproject-335506/app-engine-tmp/quickstart-image:tag1'
-step:
-  - name: 'gcr.io/cloud-builders/gcloud'
-    entrypoint: "bash"
-    args:
-      - "-c"
-      - |
-          echo "enter 1 bash command per line"
-          ls -la
-          gcloud version
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: "bash"
+  args:
+    - "-c"
+    - |
+        echo "enter 1 bash command per line"
+        ls -la
+        gcloud version
 # [END cloudbuild_quickstart_build]

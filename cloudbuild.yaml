@@ -14,10 +14,6 @@
 
 # [START cloudbuild_quickstart_build]
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'asia.gcr.io/$PROJECT_ID/app-engine-tmp/quickstart-image:tag1', '.' ]
-images:
-- 'asia.gcr.io/firsttestproject-335506/app-engine-tmp/quickstart-image:tag1'
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: "bash"
   args:

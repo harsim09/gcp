@@ -17,5 +17,5 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1', '.' ]
 images:
-- 'us-central1-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
+- 'asia.gcr.io/firsttestproject-335506/app-engine-tmp/quickstart-image:tag1'
 # [END cloudbuild_quickstart_build]
